@@ -139,9 +139,9 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <ColorText>&lt;</ColorText>Debasis Bhuyan
+         Debasis Bhuyan
     
-          <ColorText>&gt;</ColorText>
+         
         </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>

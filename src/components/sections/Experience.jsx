@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { experiences } from "../../data/constants";
-import { VerticalTimeline } from "react-vertical-timeline-component";
+// import { experiences } from "../../data/constants";
+// import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import ExperienceCard from "../cards/ExperienceCard";
+// import ExperienceCard from "../cards/ExperienceCard";
 
 const Container = styled.div`
 margin-top: 100px;
@@ -60,18 +60,18 @@ const Experience = () => {
             marginBottom: "40px",
           }}
         >
-          My work experience as a software engineer and working on different
-          companies and projects.
+          I am currently Studying MCA and I do not have any work  experience in any company.
+
         </Desc>
 
-        <VerticalTimeline>
+        {/* <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
             />
           ))}
-        </VerticalTimeline>
+        </VerticalTimeline> */}
       </Wrapper>
     </Container>
   );

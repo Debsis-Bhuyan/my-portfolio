@@ -108,21 +108,9 @@ const Projects = ({ openModal, setOpenModal }) => {
           apps. Here are some of my projects.
         </Desc>
         <ToggleButtonGroup>
-          <ToggleButton
-          
-            active={toggle === "all"}
-            onClick={() => setToggle("all")}
-          >
-            ALL
-          </ToggleButton>
+          <ToggleButton>ALL</ToggleButton>
           <Divider />
-          <ToggleButton
-          act="true"
-            active={toggle === "web app"}
-            onClick={() => setToggle("web app")}
-          >
-            WEB APP"S
-          </ToggleButton>
+
           {/* <Divider />
           <ToggleButton
             active={toggle === "android app"}
@@ -141,7 +129,8 @@ const Projects = ({ openModal, setOpenModal }) => {
         <CardContainer>
           {toggle === "all" &&
             projects.map((project, i) => (
-              <ProjectCard key={i}
+              <ProjectCard
+                key={i}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
